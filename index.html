@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="plugins/plugin-loader.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/lib/fastclick.js"></script>
+    <script src="js/lib/event_dispatcher.js"></script>    
+    <script src="js/app.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/http_server.js"></script>    
+    <script src="js/websocket_server.js"></script>
+    <link rel="stylesheet" href="plugins/plugin-loader.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="padding">
+    <section class="status padding rounded big-font">
+        <div>Http Server: <span id="http-server-status">*</span></div>
+        <div>WebSocket Server: <span id="websocket-server-status">*</span></div>
+        <div>Clients: <span id="clients-status">*</span></div>
+    </section>
+    
+    <section>
+        <div id="jump-button" onclick="App.trigger('jump:clicked');" class="button full half-height center">
+            Jump!
+        </div>        
+    </section>
+    
+</body>
+</html>
