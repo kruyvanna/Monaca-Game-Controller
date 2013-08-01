@@ -1,7 +1,7 @@
 window.App.httpServer = {};
 
 var PORT = 3000;
-var ROOT_DIRECTORY = "www/client/"
+var ROOT_DIRECTORY = "client/"
     
 var httpServer = new monaca.HttpServer(ROOT_DIRECTORY, PORT);
 
